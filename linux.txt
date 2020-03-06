@@ -1,0 +1,719 @@
+
+
+
+-> Git:
+
+* Merge,
+* stash
+* Rebase vs Merge
+* commit --amend
+
+* git remote -v
+* git remote
+
+* git push origin master 
+
+* git pull origin master
+ 
+-> Jenkins:
+
+* Pipeline groovy
+* Installation
+* Managing plugins
+
+
+Ant 
+Maven
+
+
+-> Ansible:
+
+* Inventory file - hosts.ini
+* Ansible Playbook  (.yaml)
+
+* roles/
+       -> 
+* vars
+
+* vault
+
+
+-> Docker:
+
+* images
+* container
+* ps
+* logs
+* volumes
+* links
+* networks
+* Building a docker images by writing Dockerfile.
+* Multistage build
+* docker-compose
+* docker swarm
+
+->
+
+Cloud Computing:
+
+->AWS:
+
+EC2
+S3
+VPC
+Route53
+
+
+Sri rama pg for gents,  
+#80/143, 1st cross, 
+Ashwath nagar, Marathalli , 
+Bangalore, Karnataka - 560037
+
+
+
+
+
+
+
+[root@ip-172-31-40-114 ec2-user]# cat /lib/systemd/system/moodometer.service
+[Unit]
+Description=Mood O Meter Service
+After=multi-user.target
+
+
+[Service]
+Type=idle
+ExecStart=/bin/python /home/ec2-user/Emotick_FE/servertest.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
+[root@ip-172-31-40-114 ec2-user]#
+
+
+
+  441  sudo yum remove ansible
+  442  ls
+  443  ls
+  444  cat /etc/os-release
+  445  sudo subscription-manager repos --enable rhel-7-server-ansible-2.9-rpms
+  446  sudo subscription-manager repos --list
+  447  sudo yum install pip
+  448  ls
+  449  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+  450  ls
+  451  python
+  452  ls
+  453  python get-pip.py --user
+  454  ls
+  455  pip
+  456  pip install --user ansible
+  457  export PATH=/u/fpqa1/.local/bin:${PATH}
+  458  pip
+  459  vim ~/.bash_profile
+  460  vi ~/.bash_profile
+  461  pip install --user ansible
+  462  ls
+  463  ansible'
+  464  ansible
+  465  ansible --version
+  466  ls
+  467  ansible --version
+  468  ls
+  469  ls -l
+  470  pip install --user ansible
+  471  cd ~/.profile
+  472  vi ~/.profile
+  473  ls
+  474  cd /u/fpqa1/
+  475  ls
+  476  ls -al
+  477  cat ~/.profile
+  478  ls
+  479  pwd
+  480  cd .local/bin/
+  481  ls
+  482  cd ansible
+  483  ls
+  484  ls
+  485  ansible
+  486  source .profile
+  487  ansible
+  488  vi ~/.bashrc
+  489  ansible
+  490  ansible -version
+  491  ansible --version
+  492  man pip
+  493  pip --help
+  494  sudo su
+  495  sudo
+  496  ./sudo
+  497  exit
+  498  sudo yum update
+  499  sudo su
+  500  exit
+  501  hostory
+  502  history
+  
+
+
+
+Ansible can be installed with pip, the Python package manager.
+If pip isn’t already available on your system of Python, run the following commands to install it:
+
+$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+$ python get-pip.py --user
+
+Check pip is installed or not by typing
+
+$ pip --version
+
+Or else,
+
+set the PATH of the pip in ~/.bashrc file
+
+"""
+ export PATH=~/.local/bin:${PATH}
+
+"""
+
+# source ~/.bahsrc
+
+Then install Ansible [1]:
+
+$ pip install --user ansible
+
+Check the ansible version
+
+$ ansible --version
+
+[bharath@minikube ~]$
+
+~ - tilda
+
+bharath - user
+
+minikube - hostname or servername
+
+$ - indicates current user is normal user
+
+# - root user
+
+[root@minikube ~]#
+
+/root
+
+bavya
+/home/bavya
+
+abc
+
+/home/abc
+
+
+# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files are located in the bash-doc package.
+
+# the default umask is set in /etc/profile; for setting the umask
+# for ssh logins, install and configure the libpam-umask package.
+#umask 022
+
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+        . "$HOME/.bashrc"
+    fi
+fi
+
+# set PATH so it includes user's private bin directories
+PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+
+#export JRE_HOME=/opt/jre
+#export PATH=${JRE_HOME}/bin:${PATH}
+
+export JAVA_HOME=/opt/java/openjdk
+export PATH=${JAVA_HOME}/bin:${PATH}
+
+export ANT_HOME=/opt/ant
+export PATH=${ANT_HOME}/bin:${PATH}
+
+#export LAX_DEBUG=true
+export PATH=$PATH:/usr/local/go/bin
+
+
+
+export WIN_HOME=/mnt/c/Users/1025928/
+export JAVA_HOME=/opt/java/openjdk
+export JAVA_HOME=/opt/java/openjdk
+export JAVA_HOME=/opt/java/openjdk
+export JAVA_HOME=/opt/java/openjdk
+export JAVA_HOME=/opt/java/openjdk
+export ANT_HOME=/home/bharath/ant
+export PATH=${ANT_HOME}/bin:${PATH}
+
+export ANSIBLE_NOCOWS=1
+
+
+
+
+export PATH=/home/bharath/ansible/bin:${PATH}
+
+
+
+
+
+
+
+File notations:
+
+white/black - files (-)
+blue - directories   (b)
+sky blue - links  (l)
+red - archive files (file ext)
+green - executable files (file permission x)
+yellow - block level files(b), character files(c) 
+(c)
+
+ls -l
+
+
+
+
+Listing:
+
+# ls ---> list the current directories
+# ls <dir> list the particuular dir
+# ls -l
+
+# ls -a
+# ls -al
+
+
+
+
+
+
+Regular exp, pipelines, filter and I/O redirection:
+
+|
+
+grep:
+
+Global regular exp print
+
+
+# grep <keyword> <filename>
+
+# grep bharath /etc/passwd
+
+# grep -An -Bn <keyword> <filename>
+
+where n = 1,2,3....
+
+# pipelining
+
+
+
+
+-> filter commands
+
+more
+less
+head
+# head <file> - 10 lines
+# head -n <filename>
+# head -4 /etc/os-release
+
+# 
+tail
+sort
+cut
+sed
+
+
+# sed s/searchfor/replacewith/g <filename>
+In this case,
+
+# sed s#searchfor#replacewith#g <filename>
+
+# sed 's+searchfor+replacewith+g' <filename>
+
+# sed 's||g' <filename>
+searchfor|replacewith
+
+
+
+-> redirections
+
+>  -- tee
+
+>> -- tee -a
+
+
+find
+
+All your pull requests and reviews are done. When there's something to review it'll appear here.
+
+
+                            You have no pull requests to review
+All your pull requests and reviews are done. When there's something to review it'll appear here.
+
+
+
+
+
+Create a service definition file:
+
+# sudo vim /lib/systemd/system/something.service
+
+Add the systemd unit file definition. You can check this or the systemd reference guide for more details:
+---
+[Unit]
+Description=My Python Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/myuser/mypythonproject.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
+Set the necessary permissions on the file:
+---
+
+
+
+# sudo systemctl daemon-reload
+
+Enable the service to start on reboot:
+
+sudo systemctl enable something.service
+
+if [[ PRODUCT_TYPE == cis  ]]; then
+
+
+UGA:
+
+useradd
+usermod
+
+-d
+-u
+-s
+-l
+-L to lock the acocunt
+-U to unlock the account
+
+
+userdel
+
+chage
+
+groupadd
+groupmod
+
+
+
+#################### Managing partitions and FS #################
+
+-> types of storage:
+
+   -> Block level storage
+      
+	  HDD, SSD, EBS-> we should define(formating) the FS before using.
+	  
+	  Windows - NTFS ( new tech file system)
+	  Linux - ext4,ext3,ext2 (extended fs)
+	  
+	  
+   -> File level storage
+
+       eg: USB,CD and DVD and S3 -> no need to define FS. FS is already defined.
+
+volume: HDD, SSD
+volume -> 
+
+
+
+
+
+
+-> IDE- intregrated device electronics.
+
+/dev/hda
+/dev/hdb
+/dev/hdc
+
+-> SCSI - small computer system interfaces
+
+   /dev/sda
+           -> /dev/sda1
+		      /dev/sda2
+			  sda3
+			  sda4
+   /dev/sdb
+   
+   > 
+   /dev/sdc
+   
+-> SATA  - Serial advanced technology attachments
+
+   /dev/sda
+   /dev/sdb
+   /dev/sdc
+   
+ 
+-> Virtual 
+
+/dev/vda
+vdb
+
+-> Cloud
+
+/dev/xvda
+/dev/xvdb
+
+
+
+
+
+Mounting
+
+-> Permanent mount
+   It will mount on every boot
+   
+   --- 
+- name: Create .bash_profile file
+  block:
+  - name: Check the bash_profile file
+    stat:
+      path: ~/.bash_profile
+    register: bash_profile
+ 
+  - debug:
+      msg: ".bash_profile exists"
+    when: bash_profile.stat.exists == true
+ 
+  - debug:
+      msg: ".bash_profile not exists"
+    when: bash_profile.stat.exists == false
+ 
+  - name: Creating .bash_profile
+    block:
+    - name: Creating .bash_profile
+      file:
+       path: ~/.bash_profile
+       state: touch
+    - debug:
+       msg: ".bash_profile created successfully"
+    when: bash_profile.stat.exists == False
+ 
+  - name: Adding export variables in .bash_profile
+    lineinfile:
+      path: ~/.bash_profile
+      insertbefore: EOF
+      line: "{{ item }}"
+    with_items:
+    - 'export TNS_ADMIN={{ TNS_ADMIN }}'
+
+  rescue:
+  - fail:
+      msg: "error on create .bash_profile"
+
+-> Temparory mount
+   # mount /dev/sdb1 /opt/navya
+   
+   after reboot
+   
+
+All (temp+permanent) mount points are stored in /etc/mtab
+
+Only permanent mount points are there in /etc/fstab
+
+# cat /etc/mtab
+
+
+
+SWAP:
+
+Memory: - RAM
+
+4GB of RAM -  512GB HDD - 4GB
+
+SWAP space 4GB
+virtual memory
+paging
+
+
+
+Logical Volume management
+
+
+
+lvm - logical volume manager
+
+lvm
+
+
+
+-> 
+500 -200 = 300
+
+
+extending a LV:
+
+1. check the size ( df -h )
+2. Check the available space in VG
+
+3. extend the LV
+
+ -> extend the lvm
+ -> resize the fs
+ 
+
+4. reduce the size of LV.
+
+ -> Unmount the LV. (down time for LV)
+ 
+     # umount /dev/voyager/bavya
+	 
+	 put a comment in the /etc/fstab entriy
+
+ -> Organise the data inside LV
+ 
+     # e2fsck -f /dev/voyager/bavya
+	 
+ 
+ -> Resize the FS.
+     
+	 # resize2fs /dev/voyager/bavya <size>
+	 
+ 
+->  lvreduce 
+     
+	  # lvreduce -L -200G /dev/voyager/bavya
+	  
+	Then mount the lv.
+	
+	
+	
+
+
+change request -service now
+                jira
+				
+				
+->  lvcreate -L 10G -n divya voyager
+
+-> lvextend -L +5G /dev/voyager/divya
+
+-> lvreduce -L -3G /dev/voyager/divya
+
+
+
+
+
+
+# webserver
+  HTTP server
+  
+  
+-> to host static webpages
+
+
+
+installation steps:
+
+
+-> server, machine ( linux, unix, windows)
+
+ Linux - Ubuntu, centos and RHEL
+ 
+
+-> Webserver Installation:
+
+   1. Apache HTTP server ( Apache webserver) ( httpd server)
+
+   2. Nginx HTTP & reverse proxy server
+   
+
+
+Apache HTTP server:
+
+Redhat:
+    # yum update -y
+	# yum install httpd -y          ---> redhat community (rhel,centos,fedora)
+
+ubuntu/debian:
+	
+	# apt update
+    # apt install apache2 -y
+	
+-> verify the Server root. (/etc/apache2 or /etc/httpd/)
+    conf file is httpd.conf or apache2.conf
+	
+-> Identify the Document root in httpd.conf
+    Doc root is /var/www/html
+	
+    
+
+	
+
+
+-> copy the webpages ( hosting)
+
+   copy or move all web project docs to document root
+   
+-> start the wevserver
+
+    # service httpd start
+	# service httpd status
+	# service httpd stop
+	# service httpd restart
+	# service httpd reload
+	
+	# service apache2 start
+	# service httpd status
+	# service httpd stop
+	# service httpd restart
+	# service httpd reload
+	
+	# systemctl start httpd
+	# systemctl start apache2	
+	
+-> open 80 port usees http protocol
+
+
+    # aws - security groups
+	# Linux - IPTABLES
+	
+	ubuntu: ufw - uncomplicated firewall
+	centos: firewalld
+	
+	# ufw status
+	# ufw enable
+	# ufw disable
+	
+	# ufw allow 80
+	# ufw deny 80
+	
+	
+	 
+
+-> Access
+
+
+  http://192.168.1.125/
+  
+  http://localhost
+  
+  http://www.bavya.com
+  
+  
