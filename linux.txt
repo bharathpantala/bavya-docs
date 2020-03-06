@@ -649,7 +649,7 @@ Apache HTTP server:
 
 Redhat:
     # yum update -y
-	# yum install httpd -y          ---> redhat community (rhel,centos,fedora)
+	# yum install httpd -y          ---> redhat community (rhel,centos,fedora, amazon linux)
 
 ubuntu/debian:
 	
@@ -687,6 +687,19 @@ ubuntu/debian:
 	
 	# systemctl start httpd
 	# systemctl start apache2	
+	
+	
+	
+	If u want start any service on boot
+	
+	Ubuntu/debain :
+	    # systemctl enable <service name>
+		# systemctl disable <service name>
+		
+		
+    Redhat :
+	    # chkconfig httpd on
+		# chkconfig httpd off
 	
 -> open 80 port usees http protocol
 
