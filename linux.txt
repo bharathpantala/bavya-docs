@@ -730,3 +730,91 @@ ubuntu/debian:
   http://www.bavya.com
   
   
+  
+  
+  
+  
+# ssh topic
+
+
+# ssh user@ip
+
+# ssh-keygen     -> it will gen the keys under ~/.ssh
+# ssh-copy-id user@ip    -> it will copy ur ~/.ssh/id_rsa.pub to remote host.
+
+# ssh-keygen -t rsa -N "" -f <filename>  -> silent generation
+
+# ssh-copy-id -i <path>/own_key.pub user@ip
+
+# ssh -i <private_key> user@ip
+
+# scp <src> user@ip:<dest>
+
+
+
+############################# Application Server ###############################
+
+vendors
+
+-> Apache Tomcat  ( free )
+
+-> IBM websphere  $$$
+-> Oracle Weblogic $$$
+
+Apache Tomcat:
+
+-> Appserver
+-> Java Servlet container
+-> JVM
+
+
+Installation:
+
+
+-> Server ( linux/windows/unix)
+-> Java Installation
+
+#export JAVA_HOME=/opt/java
+#export PATH=${JAVA_HOME}/bin:$PATH
+
+-> Tomcat Installation
+
+# cd $CATALINA_HOME/
+# ./startup.sh
+# ./shutdown.sh
+
+
+
+-> Tomcat Configuration
+
+# cd $CATALINA_HOME/conf/
+edit the tomcat-users.xml
+
+add manager-gui and admin-gui roles
+add a user and assign correct role.
+
+
+
+-> Deploying Application
+
+   * drop war files under the $CATALINA_HOME/webapps/ dir.
+   
+   
+-> open ports (8080)
+-> Access http://localhost:8080
+
+
+
+Adv:
+
+Set the JAVA_OPTS="-Xms256m -Xmx512m"
+
+JDK - Java development kit ( dev / build machines)
+
+JRE - Java Runtime Environment -> appserver / runtime
+
+bavya.java
+-> compile -> bavya.class -> execute(run)
+compiler- javac
+interpreter - java
+
